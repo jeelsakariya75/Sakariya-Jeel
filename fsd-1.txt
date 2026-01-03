@@ -1,0 +1,522 @@
+<html>
+    <head>
+        <script>
+            document.write("hello")
+             document.writeln("World <br>")
+            < document.writeln("jeel <br>")
+            console.log("console")
+
+
+            /*local*/
+
+            function abc() 
+            {
+                var x=10;
+                document.write(x);
+                console.log(x)
+            }
+            abc();
+            <!-- document.write(x); -->
+            document.writeln("<br>")
+/*----------------------------------------------------------------------------------------------*/
+            /*Globle*/
+            var d=25
+            function xyz()
+            {
+                document.write(d )
+                console.log(d)
+            }
+            xyz();
+
+             document.writeln("<br>")
+/*---------------------------------------------------------------------------------------------*/
+             var a=12;
+             function f1()
+             {
+                var b=20
+                console.log(a,b)
+             }
+             function f2()
+             {
+                console.log(a)
+                /*console.log(b)*/
+             }
+             f1();
+             f2();
+ /*-----------------------------------------------------------------------------------------*/           
+
+             function abc()
+             {
+                let a=10;
+                if(a>=5)
+                {
+                    /* let b=1; error*/
+                    var b=1;
+                }
+                /* console.log(b) refrence Error : b is not defind*/
+                 console.log(b)
+             }
+             abc();
+/*---------------------------------------------------------------------------------------------*/
+               let x=100
+                   x=200
+                   console.log(x)
+/*---------------------------------------------------------------------------------------------*/
+                const p=10;
+                function f()
+                {
+                   const p=9
+                    console.log(p)
+                }
+                f();
+                 console.log(p)
+
+
+ /*---------------------------------------------------------------------------------------------*/
+                /*  const g=10;
+                function f()
+                {
+                 g=9
+                    console.log(g)
+                }
+                f();
+                 console.log(g) */
+/*---------------------------------------------------------------------------------------------*/
+                 var a1=undefined
+                 var a2="test"
+                 var a3=true
+                 var a4=5
+                 var a5=null
+                 document.write(typeof(a1)+"<br>")
+                 document.write(typeof(a2)+"<br>")
+                 document.write(typeof(a3)+"<br>")
+                 document.write(typeof(a4)+"<br>")
+                 document.write(typeof(a5)+"<br>")
+/*---------------------------------------------------------------------------------------------*/
+                var b1=16+4+"xyz"
+                var b2="xyz"+16+4
+                document.write(b1+"<br>")
+                document.write(b2+"<br>")
+/*---------------------------------------------------------------------------------------------*/
+                const parson=
+                {
+                    fname:"xyz",
+                    lname:"abc"
+                }
+                document.write(parson.fname+" ")
+                document.write(parson.lname+"<br> ")
+/*---------------------------------------------------------------------------------------------*/
+                const fruits=["greaps","Mango","orange"]
+                document.write(fruits[0]+"<br>")
+
+                length = fruits.length
+                document.write(fruits[1]+"<br>")
+/*---------------------------------------------------------------------------------------------*/
+                let login=true
+                if(login)
+                {
+                    console.log("Welcome")
+                }
+                else
+                {
+                    console.log("Not")
+                }
+/*---------------------------------------------------------------------------------------------*/
+
+                let age=16
+                if(age>=18)
+                {
+                    console.log("Allowed")
+                }
+                else
+                {
+                    console.log("Not Allowed")
+                }
+/*---------------------------------------------------------------------------------------------*/                
+                let score=82;
+                if(score>90)
+                {
+                    console.log("Gread-A")
+                }
+                else if(score>=75)
+                {
+                    console.log("Gread-B")
+                }
+                else
+                {
+                    console.log("Gread-C")
+                }
+/*---------------------------------------------------------------------------------------------*/  
+                let role="admin"
+                switch(role)
+                {
+                    case "editor": console.log("Editor case")
+                    break;
+
+                    case "viewer": console.log("viewer case")
+                    break;
+
+                    case "admin": console.log("admin case")
+                    break;
+
+                    default: console.log("No-Access")
+                }
+/*---------------------------------------------------------------------------------------------*/  
+                let age1=20;
+                let result= age1>=18 ? "admin":"Minor"
+
+                console.log(result)
+
+                let age2=16;
+                let result2= age2>=18 ? "admin":"Minor"
+
+                console.log(result2)
+/*---------------------------------------------------------------------------------------------*/  
+                for(let i=0;i<=5;i++)
+                {
+                    console.log(i)
+                }
+/*---------------------------------------------------------------------------------------------*/  
+                let count = 1;
+
+                while (count <= 5) {
+                console.log("Current count is: " + count);
+                count++;
+                }
+
+                console.log("Loop finished!");
+
+/*---------------------------------------------------------------------------------------------*/
+                let count1 = 1;
+
+                do {
+                console.log("Current count: " + count1);
+                count1++;
+                }                
+                while (count1 <= 5);
+
+                console.log("Loop finished. The final value of count is: " + count1);
+
+/*---------------------------------------------------------------------------------------------*/  
+                 let fruits1=["greaps","Mango","orange"]
+                 for (let f of fruits1)
+                 {
+                    document.write(f,"<br>")
+                    console.log(f)
+                 }     
+/*---------------------------------------------------------------------------------------------*/
+                
+                 let fruits2=["greaps","Mango","orange"]
+                 for (let f in fruits2)
+                 {
+                    document.write(f,"<br>")
+                    console.log(f)
+                 }
+/*---------------------------------------------------------------------------------------------*/
+                 let fruits3=["greaps","Mango","orange"]
+                 for (let f in fruits3)
+                 {
+                    document.write(f,"<br>")
+                    console.log(fruits3[f])
+                 }
+document.write("--------------------------------------------------------------------------------","<br>")
+/*---------------------------------------------------------------------------------------------*/
+                let fruits4=["greaps","Mango","orange"]
+                fruits4.push("apple")
+                for (let f of fruits4)
+                 {
+                    document.write(f,"<br>")
+                    console.log(f)
+                 }
+document.write("--------------------------------------------------------------------------------","<br>")
+/*---------------------------------------------------------------------------------------------*/
+                fruits4.pop("apple")
+                for (let f of fruits4)
+                 {
+                    document.write(f,"<br>")
+                    console.log(f)
+                 }
+/*---------------------------------------------------------------------------------------------*/
+document.write("--------------------------------------------------------------------------------","<br>")  
+                let numbers=[1,2,3,4]
+                let squre= numbers.map(num => num*num);
+                console.log(numbers)
+                console.log(squre)
+                document.write(numbers,"<br>")
+                document.write(squre,"<br>")
+
+/*---------------------------------------------------------------------------------------------*/
+document.write("--------------------------------------------------------------------------------","<br>")
+
+                let ages=[12,15,15,18,25,19]
+                let adult=ages.filter(age=>age>=18)
+                console.log(ages)
+                console.log(adult)
+                document.write(ages,"<br>")
+                document.write(adult,"<br>")
+/*---------------------------------------------------------------------------------------------*/
+document.write("--------------------------------------------------------------------------------","<br>")
+                let names=["ABC","XYZ","PQR"]
+                names.forEach(name=>{console.log("Hello"+name)})
+                names.forEach(name=>{document.write("Hello"+name,"<br>")})
+                /*console.log(names)
+                document.write(names,"<br>")*/
+/*---------------------------------------------------------------------------------------------*/
+document.write("--------------------------------------------------------------------------------","<br>")     
+                let color = ["RED","BLUE","BLACK"]
+                console.log(color.includes("RED"))
+                console.log(color.includes("GREEN"))
+                document.write(color.includes("RED"),"<br>")
+                document.write(color.includes("GREEN"),"<br>")
+/*---------------------------------------------------------------------------------------------*/
+document.write("--------------------------------------------------------------------------------","<br>")   
+                let user=[
+                {
+                    id:1,name:"jeel",age:18,city:"Rajkot"
+                },  
+                {
+                    id:2,name:"OM",age:19,city:"Rajkot"
+                },
+                {
+                    id:3,name:"Rishi",age:19,city:"Rajkot"
+                }
+                ]
+                let user1=user.find(u=>u.id==2)
+                console.log(user1)
+                
+                for(let k in user1)
+                {
+                    document.write(k+":"+user1[k]+"<br>")
+                }
+
+                let user2=user.find(u=>u.id==1)
+                console.log(user2)
+                for(let j in user2)
+                {
+                    document.write(j+":"+user2[j]+"<br>")
+                }
+/*---------------------------------------------------------------------------------------------*/
+              let e=5
+              let b=++e
+              console.log(b)
+              console.log(e)
+              
+/*---------------------------------------------------------------------------------------------*/
+                 let g=5
+              let fg=g++
+              console.log(g)
+              console.log(fg)
+/*---------------------------------------------------------------------------------------------*/
+document.write("--------------------------------------------------------------------------------","<br>")
+
+             let ab = 5
+             let bd = ab++
+             document.write(ab+"<br>")
+             document.write(bd)
+             function showmassage(){
+             document.write("Button clicked")
+             }
+/*---------------------------------------------------------------------------------------------*/
+document.write("--------------------------------------------------------------------------------","<br>")
+             function add(a,b)
+             {
+                c=a+b
+                console.log(c)
+             }
+             console.log(add(3,4))
+/*---------------------------------------------------------------------------------------------*/            function add(a,b)
+             {
+                c=a+b
+            return c
+             }
+             console.log(add(3,4))
+/*---------------------------------------------------------------------------------------------*/
+document.write("--------------------------------------------------------------------------------","<br>")
+           /* ( function()
+            {
+                document.write("This function runs automatticaly")
+            })(); */
+/*---------------------------------------------------------------------------------------------*/
+document.write("--------------------------------------------------------------------------------","<br>")
+            function fullname(firstname,lastname)
+            {
+                document.write(firstname+" "+lastname)
+            }
+
+/*---------------------------------------------------------------------------------------------*/
+document.write("--------------------------------------------------------------------------------","<br>")
+            function Hello()
+            {
+                result=info("jeel","sakariya")
+                document.write(result)
+            }
+            function info(fname,lname)
+            {
+                return fname+lname
+            }
+/*---------------------------------------------------------------------------------------------*/
+
+            const addition=(a,b)=>a+b;
+            console.log(addition(6,7))
+/*---------------------------------------------------------------------------------------------*/
+            const squre1=(a)=>a*a;
+            console.log(squre1(6))
+/*---------------------------------------------------------------------------------------------*/
+            const multiply=(a,b)=>
+            {
+                const result=a*b;
+                return result;
+            }  
+            console.log(multiply(2,3))
+/*---------------------------------------------------------------------------------------------*/
+            let ax=5
+            let ay=3
+            let result1 = `sum is ${ax+ay}`
+            console.log(result1)
+/*---------------------------------------------------------------------------------------------*/
+            let text="Hello!\n How are you?\n goodbye! "
+            console.log(text)
+/*---------------------------------------------------------------------------------------------*/
+            let text1=`hello 
+            hii
+            Hyy`
+            console.log(text1)
+/*---------------------------------------------------------------------------------------------*/
+            let html ="<div>"+"<h1>True</h1>"+"<p>Text</p>"+"</div>"
+            console.log(html)
+/*---------------------------------------------------------------------------------------------*/
+            let html1 =`<div>+<h1>True</h1>+<p>Text</p>+</div>`
+            console.log(html1)
+/*---------------------------------------------------------------------------------------------*/
+            function fun(a,b)
+            {
+                console.log(a)
+                console.log(b)
+            }
+            fun(4,7,2,5,7)
+/*---------------------------------------------------------------------------------------------*/
+            function fun1(a,b,...c)
+            {
+                console.log(a)
+                console.log(b)
+                console.log(c)
+                console.log(c.length)
+                console.log(c.indexOf(8))
+                console.log(c.indexOf(4))  /* Elemant-4 is not in c ,print -1*/
+            }
+            fun1(4,7,3,9,5,8)
+/*---------------------------------------------------------------------------------------------*/
+            arr1 =[10,20,30]
+            arr2 =[40,50]
+            let arr3=[arr1,arr2]
+            console.log(arr3)
+
+
+            let arr4=[...arr1,...arr2]
+            console.log(arr4)
+
+            let arr5=[arr1,arr2]
+            console.log(...arr5)
+/*---------------------------------------------------------------------------------------------*/
+            function multiply1(a,b)
+            {
+                return a*b;
+            }
+            let number=multiply1(5)
+            console.log(number)  /* NaN=not a number*/
+            
+
+
+/*---------------------------------------------------------------------------------------------*/
+            function multiply2(a,b=2)
+            {
+                return a*b;
+            }
+            let number3=multiply2(5)
+            console.log(number3)
+/*---------------------------------------------------------------------------------------------*/
+            function multiply3(a=2,b)
+            {
+                return a*b;
+            }
+            let number4=multiply3(5)
+            console.log(number4)
+/*---------------------------------------------------------------------------------------------*/
+           /* Write A6 function to be could on butten click  tag on div on syntext tack font size and style as defoult
+           argument and pass background color and text colour while passing argument to function style shoud be cange 
+           butten click*/ 
+
+           function fun2(bg,tx,size="50px",fs="italic")
+           {
+            i=document.getElementById("d1")
+            i.style.color=tx;
+            i.style.fontStyle=fs;
+            i.style.backgroundColor=bg;
+            i.style.fontSize=size
+           }
+/*---------------------------------------------------------------------------------------------*/
+            function worn()
+            {
+                alert("This is Wearning Massage")
+                document.write("Warning")
+            }
+/*---------------------------------------------------------------------------------------------*/
+            /* conformation box */
+            function conf()
+            {
+                result=confirm("Do you want to confirm")
+                if(result==true)
+                {
+                    document.write("Yes cantinue")
+                }
+                else
+                {
+                    document.write("No return") 
+                }
+            }
+/*---------------------------------------------------------------------------------------------*/
+            function getval()
+            {
+                var res=prompt("Enter your name","Your name test")
+                document.write("your enterd:"+res);
+            }
+/*---------------------------------------------------------------------------------------------*/
+            let price=20.25255;
+            let format=price.toFixed(2);
+            document.write(format,"<br>")
+            console.log(format)
+/*---------------------------------------------------------------------------------------------*/            
+            let data="45.86"
+            let format1=parseInt(data);
+            document.write(format1,"<br>")
+            console.log(format1)
+/*---------------------------------------------------------------------------------------------*/
+            let num=[10,20,30,40,50]
+            for(let[index,value]of num.entries())
+            {
+                document.write(num,"<br>")
+            }
+/*---------------------------------------------------------------------------------------------*/
+            
+/*---------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------*/
+        </script>
+    </head>
+    <body>
+<hr>        
+        <input type="button" value="Click Me" onclick='fullname("jeel","sakariya")'>
+<hr>
+        <input type="button" value="Click Me" onclick='Hello()'>
+<hr>
+    <div id="d1">Hello</div>
+        <input type="button" value="Click Me" onclick="fun2 ('pink','blue')">
+<hr>
+     <input type="button" value="Wearning button" onclick="worn()">   
+<hr>
+    <input type="button" value="confirm button" onclick="conf()"> 
+<hr>
+    <input type="button" value="Name button" onclick="getval()">    
+<hr>  
+    </body>
+</html>
