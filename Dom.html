@@ -1,0 +1,105 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <!-- <p id="p1">Hello</p>
+        <script>
+
+/*---------------------------------------------------------------------------------------------*/
+                    document.getElementById("p1").innerHTML="Hi"
+        </script>
+        <input type="button" value="Click" onclick="fun()"> -->
+<!-- /*---------------------------------------------------------------------------------------------*/ -->
+        <!-- <p class="c1">Paregraph1</p>
+        <p class="c1">Paregraph2</p>
+        <p class="c2">Paregraph3</p>
+        <p id="c3">Paregraph4</p>
+
+        <script>
+            document.querySelector("p").style.color="red"
+            document.querySelector(".c2").style.color="blue"  
+            document.querySelector("#c3").style.color="green"
+        </script> -->
+<!-- /*---------------------------------------------------------------------------------------------*/ -->
+        <!-- <p id="demo">Hello</p>
+        <script>
+            document.getElementById("demo").innerHTML="<b>Hello</b>"
+        </script> -->
+<!-- /*---------------------------------------------------------------------------------------------*/ -->
+          <!-- <img id="i2">
+          <script>
+            document.getElementById("i2").setAttribute("src","i2.jfif")
+          </script>-->
+<!-- /*---------------------------------------------------------------------------------------------*/ -->
+          <!-- <p id="p1" title="demo.Text">Hello</p>
+          <script>
+            alert(document.getElementById("p1").getAttribute("title"))
+            document.getElementById("p1").removeAttribute("title")
+          </script> -->
+<!-- ------------------------------------------------------------------------------------------------- -->
+          <!-- <p id="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est ad quos asperiores. 
+            Corrupti placeat sit, impedit iste delectus ipsam ut architecto ea? Exercitationem, 
+            voluptas amet quaerat aut porro nam nulla.</p>
+            <script>
+                document.getElementById("p1").style.backgroundColor="yellow"
+            </script> -->
+<!-- -------------------------------------------------------------------------------------------- -->
+----------------------------------------------------------------------
+           <h2 onclick="alert(this.innerHTML)">Hello</h2>
+ <!-- -------------------------------------------------------------------------------------------- -->
+----------------------------------------------------------------------
+           <div onmousedown="mdown(this)" style="background-color: aqua; width:70px;
+                                    height:50px">Click</div>
+            <script>
+                function mdown(e)
+                {
+                    e.style.backgroundColor="red"
+                    e.innerHTML="onmousedown"
+                }
+            </script>
+<!-- -------------------------------------------------------------------------------------------- -->
+----------------------------------------------------------------------------
+<div onmouseup="mup(this)" style="background-color: aqua; width:70px;
+                                    height:50px">Click</div>
+            <script>
+                function mup(p)
+                {
+                    p.style.backgroundColor="red"
+                    p.innerHTML="onmouceup"
+                }
+            </script>
+ <!-- -------------------------------------------------------------------------------------------- -->
+  ----------------------------------------------------------------------------
+
+  <div onmouseover="mover(this)" style="background-color: aqua; width:70px;
+                                    height:50px">Click</div>
+            <script>
+                function mover(p)
+                {
+                    p.style.backgroundColor="red"
+                    p.innerHTML="onmouceover"
+                }
+            </script>
+    </body>
+ <!-- -------------------------------------------------------------------------------------------- -->
+  ----------------------------------------------------------------------------
+    <body onkeyup="fun1(this)" onkeydown="fun2(this)" onkeypress="fun3(this)">
+        <script>
+        function fun1(e)
+        {
+            e.style.backgroundColor="yellow"
+        }
+        function fun2(e)
+        {
+            e.style.backgroundColor="blue"
+        }
+        function fun3(e)
+        {
+            e.style.backgroundColor="red"
+        }
+        </script>
+ <!-- -------------------------------------------------------------------------------------------- -->
+  ----------------------------------------------------------------------------
+    <input type="text" oninput="this.value=this.valuetoUpperCase()">
+    </body>
+</html>

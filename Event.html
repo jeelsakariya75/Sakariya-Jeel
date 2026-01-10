@@ -1,0 +1,404 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <!-- <select onchange="show(event)">
+            <option value="red">RED</option>
+            <option value="blue">blue</option>
+            <option value="yellow">Yellow</option>
+        </select>
+        <script>
+            function show(e)
+            {
+                alert(e.type)
+            }
+        </script> -->
+        <!-- ---------------------------------------------------------------------------------- -->
+         <!-- <select onmouseover="show(event)">
+            <option value="red">RED</option>
+            <option value="blue">blue</option>
+            <option value="yellow">Yellow</option>
+         </select>
+         <script>
+            function show(e)
+            {
+                alert(e.target.value)
+            }
+        </script> -->
+        <!-- ---------------------------------------------------------------------------------- -->
+        <!-- <button onclick="check(event)">click</button>
+         <script>
+            function check(e)
+            {
+                alert(e.key)
+            }
+         </script> -->
+         <!-- ---------------------------------------------------------------------------------- -->
+          <!-- <hr>
+          <button onclick="check(event)">click</button>
+        <body onkeypress="check(event)">
+         <script>
+            function check(e)
+            {
+                alert(e.keyCode)
+            }
+         </script>
+         </body> -->
+         <!-- ---------------------------------------------------------------------------------- -->
+          <!-- <hr>
+          <form action="i3.jfif" onsubmit="show(event)">
+            <input type="submit" value="submit">
+            <script>
+                function show(e)
+                {
+                    alert("form submission stop")
+                }
+            </script>
+          </form> -->
+          <!-- ---------------------------------------------------------------------------------- -->
+           <!-- <hr>
+           <form action="i3.jfif" onsubmit="show(event)">
+            <input type="submit" value="submit">
+            <script>
+                function show(e)
+                {
+                    e.preventDefault()
+                    alert("form submission stop")
+                }
+            </script>
+          </form> -->
+          <!-- ---------------------------------------------------------------------------------- -->
+           <!-- <hr>
+           <button id="btn1">Click me</button>
+           <script> document.getElementById("btn1").addEventListener("click",function()
+            {
+                alert("Butten Clicked")
+            })</script> -->
+            <!-- ---------------------------------------------------------------------------------- -->
+             <!-- <hr>
+           <button id="btn">Click me</button>
+           <script> document.getElementById("btn").addEventListener("mouseover",function()
+            {
+                alert("Butten Clicked")
+            })</script> -->
+            <!-- ---------------------------------------------------------------------------------- -->
+             <!-- <hr>
+             <form name="f1" onsubmit="fun()">
+                <input type="text" name="t1" id="l1">
+                <input type="submit">
+                <script>
+                    function fun()
+                    {
+                        /*  var obj=document.forms["f1"]["t1"].value  */
+                        /*  var obj=document.f1.t1.value   */
+                        var obj=document.getElementById("l1").value
+                        alert(obj)
+                        var obj=document.forms["f1"]
+                        alert(obj.length)
+                    }
+                </script>
+             </form> -->
+             <input type="text" id="t1"/>
+             <input type="submit" onclick="fun()"/>
+             <script>
+                function fun()
+                {
+                    u=document.getElementById("t1").value
+                    objj=/abc/i
+                    if(objj.test(u))
+                    {
+                        alert("parfect")
+                    }
+                    else
+                    {
+                        alert("not parfect")
+                    }
+                }
+             </script>
+             </form>
+             <!-- -------------------------------------------------------------------------------- -->
+              <hr>
+              <input type="text" id="t2"/>
+             <input type="submit" onclick="fun()"/>
+             <script>
+                function fun()
+                {
+                    u=document.getElementById("t2").value
+                    objj=/[abc]/i
+                    if(objj.test(u))
+                    {
+                        alert("parfect")
+                    }
+                    else
+                    {
+                        alert("not parfect")
+                    }
+                }
+             </script>
+             </form>
+             <!-- -------------------------------------------------------------------------------- -->
+              <hr>
+              <input type="text" id="t3"/>
+             <input type="submit" onclick="fun()"/>
+             <script>
+                function fun()
+                {
+                    u=document.getElementById("t3").value
+                    objj=/[^abc]/i
+                    if(objj.test(u))
+                    {
+                        alert("parfect")
+                    }
+                    else
+                    {
+                        alert("not parfect")
+                    }
+                }
+             </script>
+             </form>
+             <!-- -------------------------------------------------------------------------------- -->
+              <hr>
+              <input type="text" id="t4"/>
+             <input type="submit" onclick="fun()"/>
+             <script>
+                function fun()
+                {
+                    u=document.getElementById("t4").value
+                    objj=/[0-9]/
+                    if(objj.test(u))
+                    {
+                        alert("parfect")
+                    }
+                    else
+                    {
+                        alert("not parfect")
+                    }
+                }
+             </script>
+             </form>
+              <!-- -------------------------------------------------------------------------------- -->
+              <hr>
+              <input type="text" id="t5"/>
+             <input type="submit" onclick="fun()"/>
+             <script>
+                function fun()
+                {
+                    u=document.getElementById("t5").value
+                    objj=/[^0-9]/
+                    if(objj.test(u))
+                    {
+                        alert("parfect")
+                    }
+                    else
+                    {
+                        alert("not parfect")
+                    }
+                }
+             </script>
+             </form>
+              <!-- -------------------------------------------------------------------------------- -->
+              <hr>
+              <input type="text" id="t6"/>
+             <input type="submit" onclick="fun()"/>
+             <script>
+                function fun()
+                {
+                    u=document.getElementById("t6").value
+                    objj=/[x|y]/
+                    if(objj.test(u))
+                    {
+                        alert("parfect")
+                    }
+                    else
+                    {
+                        alert("not parfect")
+                    }
+                }
+             </script>
+             </form>
+              <!-- -------------------------------------------------------------------------------- -->
+              <hr>
+              <input type="text" id="t7"/>
+             <input type="submit" onclick="fun()"/>
+             <script>
+                function fun()
+                {
+                    u=document.getElementById("t7").value
+                    objj=/^A/
+                    if(objj.test(u))
+                    {
+                        alert("parfect")
+                    }
+                    else
+                    {
+                        alert("not parfect")
+                    }
+                }
+             </script>
+             </form>
+             <!-- -------------------------------------------------------------------------------- -->
+              <hr>
+              <input type="text" id="t8"/>
+             <input type="submit" onclick="fun()"/>
+             <script>
+                function fun()
+                {
+                    u=document.getElementById("t8").value
+                    objj=/Bo*/
+                    if(objj.test(u))
+                    {
+                        alert("parfect")
+                    }
+                    else
+                    {
+                        alert("not parfect")
+                    }
+                }
+             </script>
+             </form>
+             <!-- -------------------------------------------------------------------------------- -->
+              <hr>
+              <input type="text" id="t9"/>
+             <input type="submit" onclick="fun()"/>
+             <script>
+                function fun()
+                {
+                    u=document.getElementById("t9").value
+                    objj=/t$/
+                    if(objj.test(u))
+                    {
+                        alert("parfect")
+                    }
+                    else
+                    {
+                        alert("not parfect")
+                    }
+                }
+             </script>
+             </form>
+             <!-- -------------------------------------------------------------------------------- -->
+              <hr>
+              <input type="text" id="t10"/>
+             <input type="submit" onclick="fun()"/>
+             <script>
+                function fun()
+                {
+                    u=document.getElementById("t10").value
+                    objj=/^\d{10}/
+                    if(objj.test(u))
+                    {
+                        alert("parfect")
+                    }
+                    else
+                    {
+                        alert("not parfect")
+                    }
+                }
+             </script>
+             </form>
+             <!-- -------------------------------------------------------------------------------- -->
+              <hr>
+              <input type="text" id="t11"/>
+             <input type="submit" onclick="fun()"/>
+             <script>
+                function fun()
+                {
+                    u=document.getElementById("t11").value
+                    objj=/^\d{10}$/
+                    if(objj.test(u))
+                    {
+                        alert("parfect")
+                    }
+                    else
+                    {
+                        alert("not parfect")
+                    }
+                }
+             </script>
+             </form>
+             <!-- -------------------------------------------------------------------------------- -->
+              <hr>
+              <input type="text" id="t12"/>
+             <input type="submit" onclick="fun()"/>
+             <script>
+                function fun()
+                {
+                    u=document.getElementById("t12").value
+                    objj=/^[a-z]/
+                    if(objj.test(u))
+                    {
+                        alert("parfect")
+                    }
+                    else
+                    {
+                        alert("not parfect")
+                    }
+                }
+             </script>
+             </form>
+             <!-- -------------------------------------------------------------------------------- -->
+              <hr>
+              <input type="text" id="t13" />
+             <input type="submit" onclick="fun()"/>
+             <script>
+                function fun()
+                {
+                    u=document.getElementById("t13").value
+                    objj=/^[A-z a-z]+$/
+                    if(objj.test(u))
+                    {
+                        alert("parfect")
+                    }
+                    else
+                    {
+                        alert("not parfect")
+                    }
+                }
+             </script>
+             </form>
+             <!-- -------------------------------------------------------------------------------- -->
+              <hr>
+                <!-- write a java script to validate user name or pass ward length=5 or 13 not allow shoud not 
+                start with username not start with  any number  -->
+<head>
+    <title>Inner Message Validation 2026</title>
+</head>
+<body>
+    <label>USERNAME:</label>
+    <input type="text" id="t3">
+    <hr>
+    <label>PASSWORD:</label>
+    <input type="password" id="t4">
+    <hr>
+    
+    <input type="button" value="Submit" onclick="fun()">
+
+    <p id="mssginner"></p>
+
+    <script>
+        function fun() {
+
+            var u = document.getElementById("t3").value;
+            var m = document.getElementById("t4").value;
+            var display = document.getElementById("mssginner");
+
+            display.innerHTML = "";
+
+            var userPat = /^[_@\d]/;
+
+            if (u.length == 0 || m.length == 0) {
+                display.innerHTML = "Error: Fields cannot be blank.";
+            } 
+            else if (userPat.test(u)) {
+                display.innerHTML = "Error: Username cannot start with a Number, _, or @!";
+            } 
+            else if (m.length < 6 || m.length > 12) {
+                display.innerHTML = "Error: Password must be 6-12 characters long.";
+            } 
+            else {
+                display.innerHTML = "Welcome, " + u + "!";
+            }
+        }
+    </script>
+</body>
+</html>

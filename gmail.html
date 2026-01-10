@@ -1,0 +1,23 @@
+<html>
+    <head>
+        </head>
+        <body>
+              <input type="text" id="t1" />
+             <input type="submit" onclick="fun()"/>
+             <script>
+function fun()
+            {
+                u=document.getElementById("t1").value
+                pat=/^\w+@\w[A-Z a-z]+(\.\w{2,3})+$/
+
+                if(pat.test(u))
+                {
+                    alert("Perfet")
+                }
+                else{
+                    alert("String not valid")
+                }
+            }
+            </script>
+        </body>
+</html>

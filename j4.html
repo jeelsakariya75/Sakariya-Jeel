@@ -1,0 +1,30 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <input type="text" oninput="this.value=this.value.toUpperCase()">
+<hr>
+        <input type="text" value="onfocus" onfocus="this.style.backgroundColor='yellow'">
+<hr>
+        <input type="text" oninput="this.style.color='red'">
+<hr>
+
+
+        <input id="fname" type="text" value="onchange" onchange="LowerChange()">
+        <script>
+            function LowerChange()
+            {
+                var x=document.getElementById("fname")
+                x.value=x.value.toLowerCase()
+            }
+        </script>
+<hr>
+        <input type="text" value="ONBLUR" onblur="UpperCase(this)">
+        <script>
+            function UpperCase(a)
+            {
+                a.value=a.value.toUpperCase()
+            }
+        </script>
+    </body>
+</html>

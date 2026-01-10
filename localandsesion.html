@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Local and Sesion Storage</title>
+    </head>
+    <body>
+        <!-- <script>
+            localStorage.setItem("uname","ABC")
+
+            let user=localStorage.getItem("uname")
+            console.log(user)
+
+        </script> -->
+        <script>
+            sessionStorage.setItem("uname","XYZ")
+
+            let user=sessionStorage.getItem("uname")
+            console.log(user)
+        </script>
+
+        <!-- -------------------------------------------------------------------------------- -->
+        <script>
+            /*localStorage.setItem("uname","Vrushant")
+            sessionStorage.setItem("uname","Jadav")
+            let u=sessionStorage.getItem("uname")
+            console.log(u)*/
+            function saveUser()
+            {
+                let user=document.getElementById("uname").value
+                localStorage.setItem("Username",user)
+                sessionStorage.setItem("Username",user)
+            }
+            function showUser()
+            {
+                let lu=localStorage.getItem("Username")
+                let su=sessionStorage.getItem("Username")
+                document.getElementById("output").innerHTML="Local"+lu+su
+            }
+        </script>
+    <body>
+        <input type="text" id="uname">
+        <button onclick="saveUser()">Savee</button>
+        <button onclick="showUser()">Savee</button>
+        <button onclick="clearUser()">Savee</button>
+        <p id="output"></p>
+    </body>
+</html>
+    </body>
+</html>
