@@ -1,1 +1,0 @@
-# Sakariya-Jeel
